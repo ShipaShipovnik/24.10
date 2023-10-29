@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Abhaya Libre;
+
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 1530px;
+}
+
+header {
+    height: 98px;
+    background-color: #3B3937;
+    color: white;
+}
+
+.main-menu img {
+    float: left;
+    margin-top: 18px;
+}
+
+.main-menu nav {
+    float: right;
+    margin-top: 38px;
+}
+
+.main-menu nav ul li {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+.main-menu nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-menu #email,
+#numb {
+    color: #FFD6A8;
+}
+
+/* баннер */
+.banner {
+    background-image: url(img/banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 861px;
+    padding-top: 41px;
+    color: white;
+}
+
+.circle {
+    width: 754px;
+    height: 754px;
+    text-align: center;
+    background-color: #221B1582;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding-top: 167px;
+}
+
+.circle #enterior {
+    color: #FFD6A8;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 34px;
+}
+
+.circle h2 {
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 34px;
+}
+
+.circle p {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.circle input {
+    font-size: 14pt;
+    margin-top: 48px;
+    width: 247px;
+    height: 82px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #A9845C;
+    padding-top: 28 px;
+    border: none;
+}
+
+
+/* витрина товара */
+.vitrina {
+    margin-top: 70px;
+}
+
+.vitrina h1 {
+    margin-bottom: 40px;
+}
+
+.elements-doors {
+    display: grid;
+    grid-template-columns: repeat(6, 231px);
+    grid-template-rows: repeat(2, 231px);
+    gap: 30px;
+}
+
+.door {
+    border: 1px solid black;
+    width: 230px;
+    height: 230px;
+    padding: 12px 10px;
+    font-size: 18px;
+    font-family: Abhaya Libre;
+}
+
+.door p {
+    margin-bottom: 5px;
+}
+
+.door input {
+    border: none;
+    color: red;
+    text-transform: uppercase;
+    background-color: white;
+    float: right;
+    width: 76px;
+    height: 15px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.door img {
+    margin: 0 30px;
+    width: 134px;
+    height: 133px;
+}
+
+/* Новости */
+
+.news {
+    margin-top: 70px;
+}
+
+.news h1 {
+    margin-bottom: 40px;
+}
+
+.elements-news {
+    display: grid;
+    grid-template-columns: repeat(4, 360px);
+    gap: 30px;
+}
+
+.article {
+    width: 360px;
+    height: 240px;
+    border: grey 1px dotted ;
+    color:#61605e;
+}
+.article p{
+    margin: 13px 13px 0px 13px;
+}
+.article #more{
+    float: right;
+}
+.article #more a{
+    color: red;
+    text-decoration: none;
+}
+.article #date{
+    float: left;
+}
+.article-image{
+    height: 100px;
+    width: 100%;
+    background-image:url(img/news.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* footer */
+footer{
+    background-color: #3B3937;
+    height: 400px;
+    color: white;
+    margin-top: 100px;
+    font-size: 16pt;
+}
+.footer{
+    display: grid;
+    padding-top: 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap:100px;
+}
+.footer p{
+    margin-bottom: 15px;
+}
+.footer .logo img{
+    margin-bottom: 20px;
+}
+.footer .info #phonenumb{
+    font-size: 20pt;
+}
