@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family:Abhaya Libre;
+    font-family: Abhaya Libre;
 
 }
 
@@ -166,51 +167,545 @@ header {
 .article {
     width: 360px;
     height: 240px;
-    border: grey 1px dotted ;
-    color:#61605e;
+    border: grey 1px dotted;
+    color: #61605e;
 }
-.article p{
+
+.article p {
     margin: 13px 13px 0px 13px;
 }
-.article #more{
+
+.article #more {
     float: right;
 }
-.article #more a{
+
+.article #more a {
     color: red;
     text-decoration: none;
 }
-.article #date{
+
+.article #date {
     float: left;
 }
-.article-image{
+
+.article-image {
     height: 100px;
     width: 100%;
-    background-image:url(img/news.png);
+    background-image: url(img/news.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 /* footer */
-footer{
+footer {
     background-color: #3B3937;
     height: 400px;
-    color: white;
+    color: rgb(165, 165, 165);
     margin-top: 100px;
     font-size: 16pt;
 }
-.footer{
+
+.footer {
     display: grid;
     padding-top: 80px;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap:100px;
+    column-gap: 100px;
 }
-.footer p{
+
+.footer p {
     margin-bottom: 15px;
 }
-.footer .logo img{
+
+.footer .logo img {
     margin-bottom: 20px;
 }
-.footer .info #phonenumb{
+
+.footer .info #phonenumb {
     font-size: 20pt;
+    color: rgb(255, 255, 255);
+
+}
+
+@media (max-width: 1440px) {
+    /* body {
+        background-color: aqua;
+    } */
+
+    .wrapper {
+        width: 1180px;
+    }
+
+    /*  */
+    .main-menu nav ul li a {
+        font-size: 14pt;
+
+    }
+
+    .main-menu #email,
+    #numb {
+        font-size: 16pt;
+    }
+
+
+    /*  */
+    .elements-doors {
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(3, 280px);
+        gap: 20px;
+    }
+
+    .door {
+        width: 280px;
+        height: 280px;
+        padding: 12px 10px;
+        font-size: 18px;
+    }
+
+    .door img {
+        margin: 10px 30px;
+        width: 163px;
+        height: 162px;
+    }
+
+    /*  */
+    .elements-news {
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        gap: 20px;
+    }
+
+    .article {
+        width: 280px;
+        height: 299px;
+        border: grey 1px dotted;
+        color: #61605e;
+    }
+
+    /*  */
+    footer {
+        height: 362px;
+        font-size: 14pt;
+    }
+}
+
+@media (max-width: 1280px) {
+
+    .wrapper {
+        width: 1063px;
+    }
+
+    /* баннер */
+    .banner {
+        height: 574px;
+        padding-top: 26px;
+    }
+
+    .circle {
+        width: 526px;
+        height: 526px;
+        text-align: center;
+        padding-top: 100px;
+    }
+
+    .circle #enterior {
+        color: #FFD6A8;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    .circle h2 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .circle p {
+        font-size: 18px;
+    }
+
+    .circle input {
+        font-size: 15px;
+        margin-top: 25px;
+        width: 191.505px;
+        height: 63.835px;
+        padding-top: 5px;
+
+    }
+
+    /*  */
+    .elements-doors {
+        display: grid;
+        grid-template-columns: repeat(4, 250px);
+        grid-template-rows: repeat(3, 250px);
+        gap: 10px;
+    }
+
+    .door {
+        width: 250px;
+        height: 250px;
+        padding: 10px 10px;
+        font-size: 18px;
+    }
+
+    .door img {
+        margin: 5px 30px;
+        width: 146px;
+        height: 146px;
+    }
+
+    /*  */
+    .elements-news {
+        grid-template-columns: repeat(4, 250px);
+        gap: 20px;
+    }
+
+    .article {
+        width: 250px;
+        height: 267px;
+        font-size: 10pt;
+    }
+
+    /*  */
+    footer {
+        height: 300px;
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .wrapper {
+        width: 990px;
+    }
+
+    /* баннер */
+    .banner {
+        height: 466px;
+        padding-top: 26px;
+    }
+
+    .circle {
+        width: 412px;
+        height: 412px;
+        text-align: center;
+        padding-top: 60px;
+    }
+
+    .circle #enterior {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .circle h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .circle p {
+        font-size: 14px;
+    }
+
+    .circle input {
+        font-size: 15px;
+        margin-top: 25px;
+        width: 150px;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    /*  */
+    .elements-doors {
+        display: grid;
+        grid-template-columns: repeat(3, 316px);
+        grid-template-rows: repeat(4, 316px);
+        gap: 20px;
+    }
+
+    .door {
+        width: 316px;
+        height: 316px;
+        padding: 15px 18px;
+        font-size: 18px;
+    }
+
+    .door img {
+        margin: 15px 43px;
+        width: 184.663px;
+        height: 183.675px;
+    }
+
+    .door input {
+        font-size: 16px;
+    }
+
+    /*  */
+    .elements-news {
+        grid-template-columns: repeat(3, 316px);
+        gap: 20px;
+    }
+
+    .article {
+        width: 316px;
+        height: 267px;
+        font-size: 11pt;
+    }
+
+    .article {
+        width: 316px;
+        height: 250px;
+        font-size: 11pt;
+    }
+
+    /*  */
+    footer {
+        height: 300px;
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: aqua;
+
+    }
+
+    .wrapper {
+        width: 681px;
+    }
+
+    /*  */
+    .main-menu nav ul li {
+        font-size: 12pt;
+        margin-left: 20px;
+    }
+
+    .main-menu {
+        text-align: right;
+    }
+
+    .main-menu #email,
+    #numb {
+        font-size: 14pt;
+    }
+
+
+    .main-menu img {
+        width: 73px;
+        height: 34.938px;
+    }
+
+
+    /* баннер */
+    .banner {
+        height: 470px;
+        padding-top: 30px;
+    }
+
+    .circle {
+        width: 412px;
+        height: 412px;
+        padding-top: 60px;
+    }
+
+    .circle #enterior {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .circle h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .circle p {
+        font-size: 14px;
+    }
+
+    .circle input {
+        font-size: 15px;
+        margin-top: 25px;
+        width: 150px;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    /*  */
+    .elements-doors {
+        display: grid;
+        grid-template-columns: repeat(2, 328px);
+        gap: 20px;
+    }
+
+    .door {
+        width: 328px;
+        height: 328px;
+        padding: 15px 18px;
+        font-size: 18px;
+    }
+
+    .door img {
+        margin: 15px 43px;
+        width: 191.675px;
+        height: 190.65px;
+    }
+
+    .door input {
+        font-size: 16px;
+    }
+
+    /*  */
+    .elements-news {
+        grid-template-columns: repeat(2, 328px);
+        gap: 20px;
+    }
+
+    .article {
+        width: 316px;
+        height: 267px;
+        font-size: 11pt;
+    }
+
+    .article {
+        width: 316px;
+        height: 250px;
+        font-size: 11pt;
+    }
+
+    /*  */
+    footer {
+        height: 300px;
+        font-size: 13pt;
+    }
+    .footer {
+        padding-top: 45px;
+        column-gap: 70px;
+    }
+    .footer .info #phonenumb {
+        font-size: 17pt;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: aqua;
+
+    }
+
+    .wrapper {
+        width: 681px;
+    }
+
+    /*  */
+    .main-menu nav ul li {
+        font-size: 12pt;
+        margin-left: 20px;
+    }
+
+    .main-menu {
+        text-align: right;
+    }
+
+    .main-menu #email,
+    #numb {
+        font-size: 14pt;
+    }
+
+
+    .main-menu img {
+        width: 73px;
+        height: 34.938px;
+    }
+
+
+    /* баннер */
+    .banner {
+        height: 470px;
+        padding-top: 30px;
+    }
+
+    .circle {
+        width: 412px;
+        height: 412px;
+        padding-top: 60px;
+    }
+
+    .circle #enterior {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .circle h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .circle p {
+        font-size: 14px;
+    }
+
+    .circle input {
+        font-size: 15px;
+        margin-top: 25px;
+        width: 150px;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    /*  */
+    .elements-doors {
+        display: grid;
+        grid-template-columns: repeat(2, 328px);
+        gap: 20px;
+    }
+
+    .door {
+        width: 328px;
+        height: 328px;
+        padding: 15px 18px;
+        font-size: 18px;
+    }
+
+    .door img {
+        margin: 15px 43px;
+        width: 191.675px;
+        height: 190.65px;
+    }
+
+    .door input {
+        font-size: 16px;
+    }
+
+    /*  */
+    .elements-news {
+        grid-template-columns: repeat(2, 328px);
+        gap: 20px;
+    }
+
+    .article {
+        width: 316px;
+        height: 267px;
+        font-size: 11pt;
+    }
+
+    .article {
+        width: 316px;
+        height: 250px;
+        font-size: 11pt;
+    }
+
+    /*  */
+    footer {
+        height: 300px;
+        font-size: 13pt;
+    }
+    .footer {
+        padding-top: 45px;
+        column-gap: 70px;
+    }
+    .footer .info #phonenumb {
+        font-size: 17pt;
+    }
 }
