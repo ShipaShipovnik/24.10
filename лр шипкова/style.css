@@ -467,11 +467,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-color: aqua;
-
-    }
-
     .wrapper {
         width: 681px;
     }
@@ -579,29 +574,37 @@ footer {
         height: 300px;
         font-size: 13pt;
     }
+
     .footer {
         padding-top: 45px;
         column-gap: 70px;
     }
+
     .footer .info #phonenumb {
         font-size: 17pt;
     }
 }
 
-@media (max-width: 768px) {
-    body {
-        background-color: aqua;
-
+@media (max-width: 480px) {
+  
+    section h1 {
+        text-align: center;
     }
 
+    header .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .banner .wrapper{
+        width: 421px;
+    }
     .wrapper {
-        width: 681px;
+        width: 356px;
     }
 
     /*  */
-    .main-menu nav ul li {
-        font-size: 12pt;
-        margin-left: 20px;
+    .main-menu nav ul li:not(#email, #numb) {
+        display: none;
     }
 
     .main-menu {
@@ -611,8 +614,13 @@ footer {
     .main-menu #email,
     #numb {
         font-size: 14pt;
+        display: block;
+
     }
 
+    #email {
+        margin-top: -20px;
+    }
 
     .main-menu img {
         width: 73px;
@@ -627,8 +635,8 @@ footer {
     }
 
     .circle {
-        width: 412px;
-        height: 412px;
+        width: 400px;
+        height: 400px;
         padding-top: 60px;
     }
 
@@ -643,7 +651,7 @@ footer {
     }
 
     .circle p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .circle input {
@@ -657,21 +665,21 @@ footer {
     /*  */
     .elements-doors {
         display: grid;
-        grid-template-columns: repeat(2, 328px);
+        grid-template-columns: 356px;
         gap: 20px;
     }
 
     .door {
-        width: 328px;
-        height: 328px;
+        width: 356px;
+        height: 356px;
         padding: 15px 18px;
         font-size: 18px;
     }
 
     .door img {
         margin: 15px 43px;
-        width: 191.675px;
-        height: 190.65px;
+        width: 208.037px;
+        height: 206.925px;
     }
 
     .door input {
@@ -680,7 +688,7 @@ footer {
 
     /*  */
     .elements-news {
-        grid-template-columns: repeat(2, 328px);
+        grid-template-columns: 356px;
         gap: 20px;
     }
 
@@ -691,21 +699,24 @@ footer {
     }
 
     .article {
-        width: 316px;
-        height: 250px;
+        width: 356px;
         font-size: 11pt;
     }
 
     /*  */
     footer {
-        height: 300px;
+        height: 632px;
         font-size: 13pt;
     }
+
     .footer {
+        display: grid;
+        padding-top: 80px;
+        grid-template-columns: 1fr;
         padding-top: 45px;
-        column-gap: 70px;
+        row-gap: 30px;
     }
+
     .footer .info #phonenumb {
         font-size: 17pt;
     }
-}
