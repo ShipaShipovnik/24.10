@@ -720,3 +720,144 @@ footer {
     .footer .info #phonenumb {
         font-size: 17pt;
     }
+}
+
+
+@media (max-width: 320px) {
+    body{
+        background-color: rgb(231, 148, 46);
+    }
+    section h1 {
+        text-align: center;
+    }
+
+    header .wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    .banner .wrapper{
+        width: 421px;
+    }
+    .wrapper {
+        width: 356px;
+    }
+
+    /*  */
+    .main-menu nav ul li:not(#email, #numb) {
+        display: none;
+    }
+
+    .main-menu {
+        text-align: right;
+    }
+
+    .main-menu #email,
+    #numb {
+        font-size: 14pt;
+        display: block;
+
+    }
+
+    #email {
+        margin-top: -20px;
+    }
+
+    .main-menu img {
+        width: 73px;
+        height: 34.938px;
+    }
+
+
+    /* баннер */
+    .banner {
+        height: 470px;
+        padding-top: 30px;
+    }
+
+    .circle {
+        width: 400px;
+        height: 400px;
+        padding-top: 60px;
+    }
+
+    .circle #enterior {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .circle h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .circle p {
+        font-size: 16px;
+    }
+
+    .circle input {
+        font-size: 15px;
+        margin-top: 25px;
+        width: 150px;
+        height: 50px;
+        padding-top: 5px;
+    }
+
+    /*  */
+    .elements-doors {
+        display: grid;
+        grid-template-columns: 356px;
+        gap: 20px;
+    }
+
+    .door {
+        width: 356px;
+        height: 356px;
+        padding: 15px 18px;
+        font-size: 18px;
+    }
+
+    .door img {
+        margin: 15px 43px;
+        width: 208.037px;
+        height: 206.925px;
+    }
+
+    .door input {
+        font-size: 16px;
+    }
+
+    /*  */
+    .elements-news {
+        grid-template-columns: 356px;
+        gap: 20px;
+    }
+
+    .article {
+        width: 316px;
+        height: 267px;
+        font-size: 11pt;
+    }
+
+    .article {
+        width: 356px;
+        font-size: 11pt;
+    }
+
+    /*  */
+    footer {
+        height: 632px;
+        font-size: 13pt;
+    }
+
+    .footer {
+        display: grid;
+        padding-top: 80px;
+        grid-template-columns: 1fr;
+        padding-top: 45px;
+        row-gap: 30px;
+    }
+
+    .footer .info #phonenumb {
+        font-size: 17pt;
+    }
+}
