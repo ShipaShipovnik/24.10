@@ -467,9 +467,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    body {
-        background-color: rgb(111, 46, 231);
-    }
 
     .wrapper {
         width: 681px;
@@ -590,9 +587,7 @@ footer {
 }
 
 @media (min-width:321px) and (max-width:420px) {
-    body {
-        background-color: rgb(231, 228, 46);
-    }
+
 
     section h1 {
         text-align: center;
@@ -734,20 +729,18 @@ footer {
 
 
 @media (max-width: 320px) {
-    body {
-        background-color: rgb(231, 148, 46);
-    }
+
 
     section h1 {
         text-align: center;
     }
 
     .banner .wrapper {
-        width: 421px;
+        width: 273px;
     }
 
     .wrapper {
-        width: 356px;
+        width: 297px;
     }
 
     /*  */
@@ -790,56 +783,57 @@ footer {
 
     /* баннер */
     .banner {
-        height: 470px;
-        padding-top: 30px;
+        height: 329px;
+        padding-top: 26px;
     }
 
     .circle {
-        width: 400px;
-        height: 400px;
-        padding-top: 60px;
+        width: 272px;
+        height: 272px;
+        padding-top: 32px;
     }
 
     .circle #enterior {
         font-size: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .circle h2 {
-        font-size: 36px;
-        margin-bottom: 20px;
+        font-size: 24px;
+        margin-bottom: 8px;
     }
 
     .circle p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .circle input {
-        font-size: 15px;
-        margin-top: 25px;
-        width: 150px;
-        height: 50px;
+        font-size: 14px;
+        margin-top: 15px;
+        width: 106px;
+        height: 39px;
         padding-top: 5px;
     }
 
     /*  */
     .elements-doors {
         display: grid;
-        grid-template-columns: 356px;
+        grid-template-columns: 297px;
         gap: 20px;
     }
 
     .door {
-        width: 356px;
-        height: 356px;
+        width: 297px;
+        height: 297px;
         padding: 15px 18px;
         font-size: 18px;
     }
 
     .door img {
         margin: 15px 43px;
-        width: 208.037px;
-        height: 206.925px;
+        width: 173.559px;
+        height: 172.631px;
+        flex-shrink: 0;
     }
 
     .door input {
@@ -848,30 +842,31 @@ footer {
 
     /*  */
     .elements-news {
-        grid-template-columns: 356px;
+        grid-template-columns: 297px;
         gap: 20px;
     }
 
     .article {
-        width: 316px;
+        width: 297px;
         height: 267px;
         font-size: 11pt;
     }
 
     .article {
-        width: 356px;
+        width: 297px;
         font-size: 11pt;
     }
 
     /*  */
     footer {
-        height: 632px;
+        height: 595px;
         font-size: 13pt;
     }
 
     .footer {
         display: grid;
         padding-top: 80px;
+        padding-left: 20PX;
         grid-template-columns: 1fr;
         padding-top: 45px;
         row-gap: 30px;
